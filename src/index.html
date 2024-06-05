@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Melvins Simon Omari">
+  <meta name="description" content="Personal Website">
+  <!-- React Link
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Lnk to TailwindCSS -->
+  <link rel="stylesheet" href="/src/output.css">
+
+   <!-- =========== GOOGLE ICONS LINK ============ -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+   <!-- Website Icon and Title -->
+   <link rel="Icon" href="/src/assets/.png">
+  <title>Melvins Simon Responsive Portfolio Website</title>
+
+
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="fixed top-0 w-full z-50 py-2 backdrop-blur-lg text-md shadow-md hover:bg-black duration-200 ease-in">
+      <div class="relative container w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto flex justify-between items-center">
+        <!-- logo -->
+        <a href="#Home"><img class="w-[8rem] md:w-[10rem] resize-none cursor-pointer hover:w-[9rem] ease-in duration-200 object-cover" src="/src/assets/xeniex.png" alt="Logo">
+        </a>
+
+     
+         <!-- Navlinks -->
+         <div>
+          <ul class="hidden lg:flex space-x-12 ml-12 items-center justify-center">
+            <li><a href="#Features" class="clipText">Features</a></li>
+            <li><a href="#Workflow" class="clipText">Workflow</a></li>
+            <li><a href="#Services" class="clipText">Services</a></li>
+            
+            <li><a href="#Testimonials" class="clipText">Testimonials</a></li>
+            <li><a href="#Contacts" class="clipText">Contacts</a></li>
+          </ul>
+        </div>
+
+        <!-- Buttons -->
+        <div class="hidden  sm:flex justify-between items-center space-x-8 md:mr-12">
+          <a href="#" class="py-2 px-4 border rounded-md hover:bg-gradient-to-r
+          from-orange-500 to-orange-900 active:opacity-50 active:px-3 duration-200 ease-in hover:border-none font-bold">Sign In</a>
+          <a href="#" class="py-2 px-4 bg-gradient-to-r
+           from-orange-500 to-orange-900 rounded-md hover:bg-none hover:border active:opacity-50 active:px-3 duration-200 ease-in font-bold">Sign Up</a>
+        </div> 
+         <!-- NavIcon -->
+         <div class="lg:hidden ">
+          <span id="menuIcon" class="material-symbols-outlined cursor-pointer">
+            menu
+          </span>
+        </div>  
+        
+         <!-- Small Device -->
+      <div id="phoneNav" class="hidden lg:hidden absolute z-40 top-20 right-0 container w-[80%] mx-auto">
+        <div  class=" flex flex-col space-y-4 bg-slate-600 p-4 rounded-md">
+          <div class="container mx-auto  ">
+            <ul class="flex flex-col text-left  sm:text-center justify-center space-y-4">
+              <li class=" hover:bg-black w-full py-2 px-8 rounded-md"><a href="#Features" class="clipText2">Features</a></li>
+              <li class=" hover:bg-black w-full py-2 px-8 rounded-md"><a href="#Workflow" class="clipText2">Workflow</a></li>
+              <li class=" hover:bg-black w-full py-2 px-8 rounded-md"><a href="#Services" class="clipText2">Services</a></li>          
+              <li class="hover:bg-black w-full py-2 px-8 rounded-md"><a href="#Testimonials" class="clipText2">Testimonials</a></li> <li class=" hover:bg-black w-full py-2 px-8 rounded-md"><a href="#Contacts" class="clipText2">Contacts</a></li>
+            </ul>
+          </div>
+  
+          <!-- Buttons -->
+          <div class="sm:hidden  flex justify-center gap-4 items-center space-x-8 md:mr-12">
+            <a href="#" class="py-2 px-4 border rounded-md hover:bg-gradient-to-r
+            from-orange-500 to-orange-900 active:opacity-50 active:px-3 duration-200 ease-in hover:border-none ">Sign In</a>
+            <a href="#" class="py-2 px-4 bg-gradient-to-r
+             from-orange-500 to-orange-900 rounded-md hover:bg-none hover:border active:opacity-50 active:px-3 duration-200 ease-in ">Sign Up</a>
+          </div> 
+        </div>
+      </div>
+       
+      </div>
+
+     
+    </nav>
+  </header>
+
+  <!-- ====== MAIN PAGE ======= -->
+  <main class="mt-24">
+   
+    <!-- Home section -->
+    <section id="Home" class="relative mt-20">
+      <div class="container w-[90%] mx-auto flex flex-col justify-center items-center space-y-4">
+        <div class="container w-[70%] mx-auto flex flex-col justify-center items-center space-y-12 mb-12">
+          <h1 class="text-center text-3xl md:text-5xl font-bold"><i>XENIEX</i> technologies  <span id="auto-text" class="bg-gradient-to-r from-orange-500 to-orange-950 text-transparent bg-clip-text "></span></h1>
+          <p class="text-center text-lg">Tommorow's World ,Today's Technology. Technology the mother of Civilizations, of Art & of Sciences. For the creativity, the Analytics, the Press, the Test & the Actual Model to solving day-to-day challenges.</p> 
+
+          <div class="space-x-2 md:space-x-12 sm:max-md:space-x-2">
+            <a href="#" class="py-2 px-2 bg-gradient-to-r
+             from-orange-500 to-orange-900 rounded-md hover:bg-none hover:border active:opacity-50 active:px-3 duration-200 ease-in font-bold">Learn More</a> 
+  
+            <a href="#" class="py-2 px-2 border rounded-md hover:bg-gradient-to-r
+            from-orange-500 to-orange-900 active:opacity-50 active:px-3 duration-200 ease-in hover:border-none  font-bold">Documents</a>          
+          </div>
+        </div>      
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <video loop autoplay muted class=" border border-orange-800 rounded-lg" src="/src/assets/video1.mp4"></video>
+          <video autoplay loop muted  class=" border border-orange-800 rounded-lg" src="/src/assets/video2.mp4"></video>
+        </div>
+
+      </div>
+      <!-- Blobs -->
+      <div class="absolute top-0 left-0 -z-10 w-[20rem] h-[20rem] bg-green-950 blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 -z-10 w-[20rem] h-[20rem] bg-orange-950 blur-3xl"></div>
+    </section> 
+
+    <!-- Features Section -->
+    <section id="Features" class="relative mt-20">
+      <div class="container w-[90%] mx-auto">
+        <div class="flex flex-col space-y-8 md:space-y-24 justify-center items-center">
+        <span class="text-orange-400 font-bold">FEATURES</span>
+        <span class="block pb-6 md:pb-12 text-2xl sm:text-3xl font-bold text-center">Easily deploy your creativity <span class="bg-gradient-to-r from-orange-600 to-orange-900 text-transparent bg-clip-text">& Invent your Imaginations</span></span>
+        </div>
+  
+        <div class="grid md:grid-cols-3 lg:gap-28 md:gap-12 sm:grid-cols-2 gap-6">
+          <!-- Card -->
+          <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+            <div>
+              <span class="material-symbols-outlined text-orange-700">
+                explore
+                </span>              
+            </div>  
+            
+            <div class="flex flex-col space-y-6">
+              <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+              <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+            </div>
+          </div>
+
+            <!-- Card -->
+            <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+              <div>
+                <span class="material-symbols-outlined text-orange-700">
+                  bookmark
+                  </span>              
+              </div>  
+              
+              <div class="flex flex-col space-y-6">
+                <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+                <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+              </div>
+            </div>
+            
+              <!-- Card -->
+          <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+            <div>
+              <span class="material-symbols-outlined text-orange-700">
+                monitoring
+                </span>              
+            </div>  
+            
+            <div class="flex flex-col space-y-6">
+              <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+              <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+            </div>
+          </div>
+
+            <!-- Card -->
+            <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+              <div>
+                <span class="material-symbols-outlined text-orange-700">
+                  contrast
+                  </span>              
+              </div>  
+              
+              <div class="flex flex-col space-y-6">
+                <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+                <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+              </div>
+            </div>
+
+              <!-- Card -->
+          <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+            <div>
+              <span class="material-symbols-outlined text-orange-700">
+                home
+                </span>              
+            </div>  
+            
+            <div class="flex flex-col space-y-6">
+              <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+              <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+            </div>
+          </div>
+
+            <!-- Card -->
+            <div class="p-4 w-6/6 cursor-pointer flex justify-between gap-4 mt-4 shadow-slate-600 shadow-md hover:p-6 hover:shadow-orange-700 duration-200 ease-in">
+              <div>
+                <span class="material-symbols-outlined text-orange-700">
+                  edit_note
+                  </span>              
+              </div>  
+              
+              <div class="flex flex-col space-y-6">
+                <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+                <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+              </div>
+            </div>
+  
+
+
+        </div> 
+
+      </div>  
+        <!-- Blobs -->
+        <div class="absolute top-0 left-0 -z-10 w-[20rem] h-[20rem] bg-green-950 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -z-10 w-[20rem] h-[20rem] bg-purple-950 blur-3xl"></div>   
+    </section>
+
+    <!-- WorkFlow Section -->
+  
+    <section id="Workflow" class="relative mt-20">
+
+      <div class=" container w-[90%] sm:w-90% mx-auto flex flex-col justify-center items-center gap-4">
+        <span class="text-orange-400 font-bold align-top mb-6">WORKFLOW</span>
+        <div class="flex flex-col space-y-6">          
+          <span class="block pb-6 sm:pb-12 text-2xl sm:text-3xl font-bold text-center"><i>XENIEX</i> is all about <span class="bg-gradient-to-r from-orange-600 to-orange-900 text-transparent bg-clip-text">determination in Customers Workflows</span></span>
+
+          <div class="grid grid-cols-2 align-top gap-4 max-md:grid-cols-1">
+            <div class="hover:p-2 duration-200 ease-in">
+              <img class="cursor-pointer" src="/src/assets/code.jpg" alt="Code">
+            </div>
+
+            <div>
+              <ul>
+                <li><a>
+                  <div class="p-4 cursor-pointer flex justify-between gap-4 mt-4  shadow-md hover:p-6 hover:shadow-green-700 duration-200 ease-in">
+                    <div>
+                      <span class="material-symbols-outlined text-green-700">
+                        explore
+                        </span>              
+                    </div>  
+                    
+                    <div class="flex flex-col space-y-6">
+                      <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Interfaces</h3>
+                      <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+                    </div>
+                  </div>
+                </a>
+              </li> 
+
+              <li><a>
+                <div class="p-4 cursor-pointer flex justify-between gap-4 mt-4  shadow-md hover:p-6 hover:shadow-green-700 duration-200 ease-in">
+                  <div>
+                    <span class="material-symbols-outlined text-green-700">
+                      explore
+                      </span>              
+                  </div>  
+                  
+                  <div class="flex flex-col space-y-6">
+                    <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Web Designs</h3>
+                    <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+                  </div>
+                </div>
+              </a>
+            </li> 
+
+            <li><a>
+              <div class="p-4 cursor-pointer flex justify-between gap-4 mt-4  shadow-md hover:p-6 hover:shadow-green-700 duration-200 ease-in">
+                <div>
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>              
+                </div>  
+                
+                <div class="flex flex-col space-y-6">
+                  <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Desktop Applications</h3>
+                  <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+                </div>
+              </div>
+            </a>
+          </li> 
+
+          <li><a>
+            <div class="p-4 cursor-pointer flex justify-between gap-4 mt-4  shadow-md hover:p-6 hover:shadow-green-700 duration-200 ease-in">
+              <div>
+                <span class="material-symbols-outlined text-green-700">
+                  explore
+                  </span>              
+              </div>  
+              
+              <div class="flex flex-col space-y-6">
+                <h3 class="font-bold text-lg tracking-wide">Expolore-infinite-Graphic Designs</h3>
+                <p class="text-gray-400">Easily design and arrange your VR environments with a user-friendly drag-and-drop interface."</p>
+              </div>
+            </div>
+          </a>
+        </li> 
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+        <!-- Blobs -->
+        <div class="absolute top-0 left-0 -z-10 w-[20rem] h-[20rem] bg-blue-950 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 -z-10 w-[20rem] h-[20rem] bg-green-950 blur-3xl"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="Services" class="relative mt-20">
+      <div class="container w-[80%] mx-auto flex flex-col space-y-6 sm:space-y-8">
+        <span class="text-orange-400 font-bold text-center">SERVICES</span>
+        <h1 class="text-center bg-gradient-to-r from-orange-600 to-orange-900 text-transparent bg-clip-text  text-2xl sm:text-3xl font-bold">Sample Servies Offered</h1>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 ">
+          <!-- Services Cards -->
+          <div class="relative shadow-[0px_0px_5px_#777777] rounded-md flex flex-col space-y-4 p-4"> 
+            <h3 class=" text-2xl sm:text-3xl font-bold">Web Design</h3>
+            <h3 ><span class="text-3xl sm:text-5xl font-bold">$200</span><span class="text-xl text text-gray-400"> <span class="text-3xl text-gray-400">/</span>Month</span></h3>
+
+            <div class="relative flex flex-col space-y-8 pb-20 grid-cols-1">
+            
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free domain Name</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>24/7 Customer support</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free SSL </h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 2 months hosting</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 500GB Storage</h3>            
+                </div>  
+         
+            </div>
+
+
+            <a class="py-3 border border-orange-900 rounded-md font-bold text-center hover:bg-gradient-to-r from-orange-700 to-orange-950 hover:border-none transition ease-in duration-200 absolute bottom-4 w-[85%]">Explore More</a>
+
+          </div>
+
+
+
+          <!-- card2 -->
+          <div class="relative shadow-[0px_0px_5px_#777777] rounded-md flex flex-col space-y-4 p-4 pb-20"> 
+            <h3 class="text-2xl sm:text-3xl font-bold">UX/UI Design</h3>
+            <h3 ><span class="text-3xl sm:text-5xl font-bold">$500</span></h3>
+
+            <div class="flex flex-col space-y-8">
+            
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free domain Name</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>24/7 Customer support</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free SSL </h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 2 months hosting</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 500GB Storage</h3>            
+                </div>  
+         
+            </div>
+
+
+            <a class="absolute bottom-4 w-[85%] py-3 border border-orange-900 rounded-md font-bold text-center hover:bg-gradient-to-r from-orange-700 to-orange-950 hover:border-none transition ease-in duration-200">Explore More</a>
+
+          </div>
+
+          <!-- card3 -->
+          <div class="relative shadow-[0px_0px_5px_#777777] rounded-md flex flex-col space-y-4 p-4 pb-20"> 
+            <h3 class="text-2xl sm:text-3xl font-bold">Graghic Designs</h3>
+            <h3 ><span class="text-3xl sm:text-5xl font-bold">$300</span></h3>
+
+            <div class="flex flex-col space-y-8">
+            
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free domain Name</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>24/7 Customer support</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free SSL </h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 2 months hosting</h3>            
+                </div>  
+
+                <div class="flex space-x-2">
+                  <span class="material-symbols-outlined text-green-700">
+                    explore
+                    </span>  
+                    <h3>Free 500GB Storage</h3>            
+                </div>  
+         
+            </div>
+
+
+            <a class="absolute bottom-4 w-[85%] py-3 border border-orange-900 rounded-md font-bold text-center hover:bg-gradient-to-r from-orange-700 to-orange-950 hover:border-none transition ease-in duration-200">Explore More</a>
+
+          </div>
+
+        
+        </div>
+      </div>
+
+       <!-- Blobs -->
+       <div class="absolute top-0 left-0 -z-10 w-[20rem] h-[20rem] bg-orange-950 blur-3xl"></div>
+       <div class="absolute bottom-0 right-0 -z-10 w-[20rem] h-[20rem] bg-indigo-950 blur-3xl"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="Testimonials" class="relative mt-20">
+      <div class="container w-[80%] mx-auto flex flex-col gap-12">
+        <span class="text-orange-400 font-bold text-center">TESTIMONIALS</span>
+        <h1 class="text-center text-2xl sm:text-5xl font-bold">What people say About <i>XENIEX</i></h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Person 1 -->
+          <div class="group flex flex-col gap-8 p-4 rounded-md bg-slate-800 border border-slate-600 hover:m-3 hover:border-orange-800 ease-in duration-200">
+            <p class="text-gray-400 tracking-wide">Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950 ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user4.jpg" alt="Person1"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Melvins Simon</h1>
+                <h2 class="tracking-wide text-gray-400"><i>Software Engineer</i></h2>
+              </div>
+            </div>
+          </div>
+
+           <!-- Person 2 -->
+           <div class="group flex flex-col gap-8 hover:m-3 p-4 rounded-md bg-slate-800 border border-slate-600 hover:border-orange-800 ease-in duration-200 ">
+            <p class="text-gray-400 tracking-wide">The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950  ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user3.jpg" alt="Person2"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Johhny Wales</h1>
+                <h2 class="tracking-wide text-gray-400"><i>Data Scientist</i></h2>
+              </div>
+            </div>
+          </div>
+
+           <!-- Person 3 -->
+           <div class="group flex flex-col hover:m-3 gap-8 p-4 rounded-md bg-slate-800 border border-slate-600 hover:border-orange-800 ease-in duration-200">
+            <p class="text-gray-400 tracking-wide">I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950  ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user5.jpg" alt="Person1"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Allan Watkins</h1>
+                <h2 class="tracking-wide text-gray-400"><i>Mastery Software </i></h2>
+              </div>
+            </div>
+          </div>
+
+           <!-- Person 4 -->
+           <div class="group flex flex-col hover:m-3 gap-8 p-4 rounded-md bg-slate-800 border border-slate-600 hover:border-orange-800 ease-in duration-200">
+            <p class="text-gray-400 tracking-wide">I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950  ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user6.jpg" alt="Person1"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Winnie Anns</h1>
+                <h2 class="tracking-wide text-gray-400"><i>Network Engineer</i></h2>
+              </div>
+            </div>
+          </div>
+
+           <!-- Person 5 -->
+           <div class="group flex flex-col gap-8 hover:m-3 p-4 rounded-md bg-slate-800 border border-slate-600 hover:border-orange-800 ease-in duration-200">
+            <p class="text-gray-400 tracking-wide">I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950  ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user2.jpg" alt="Person1"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Kamala White</h1>
+                <h2 class="tracking-wide text-gray-400"><i>Database Associate</i></h2>
+              </div>
+            </div>
+          </div>
+
+           <!-- Person 6 -->
+           <div class="group flex flex-col hover:m-3 gap-8 p-4 rounded-md bg-slate-800 border border-slate-600 hover:border-orange-800 ease-in duration-200">
+            <p class="text-gray-400 tracking-wide">Joining this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.</p>
+            <div class="flex justify-start gap-4">
+              <div class="p-1 rounded-full bg-slate-100 group-hover:bg-gradient-to-r from-orange-500 to-orange-950  ase-in duration-200"><img class="w-20 h-20 rounded-full" src="/src/assets/user1.jpg" alt="Person6"></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-lg group-hover:bg-gradient-to-r from-orange-500 to-orange-900 group-hover:text-transparent group-hover:bg-clip-text">Kevin Roby</h1>
+                <h2 class="tracking-wide text-gray-400"><i>DevOps Administrator</i></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Blobs -->
+       <div class="absolute top-0 left-0 -z-10 w-[20rem] h-[20rem] bg-blue-950 blur-3xl"></div>
+       <div class="absolute bottom-0 right-0 -z-10 w-[20rem] h-[20rem] bg-green-950 blur-3xl"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="relative mt-20">
+    <div class="container w-[95%] md:w-[80%] mx-auto border-t border-gray-600 flex flex-col">
+      <div class="flex justify-between items-top p-8">
+        <div>
+            <h1 class="text-lg sm:text-xl font-bold">Sites</h1>
+            <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Nairobi</h2>
+            <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Kisumu</h2>
+            <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Kajiado</h2>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold">Platforms</h1>
+          <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Features</h2>
+          <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Downloads</h2>
+          <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Released notes</h2>
+          <h2 class="block sm:text-lg text-md tracking-wide text-gray-400">Online notes</h2>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold">Community</h1>
+          <h2 class="block  sm:text-lg tracking-wide text-gray-400">Hackathons</h2>
+          <h2 class="block text-md sm:text-lg tracking-wide text-gray-400">Zoom</h2>
+          <h2 class="block text-md sm:text-lg tracking-wide text-gray-400">Socials</h2>
+          <h2 class="block text-md sm:text-lg tracking-wide text-gray-400">Meetups</h2>
+        </div>
+      </div>
+      
+      <div id="Contacts" class="grid grid-cols-1 gap-4 md:grid-cols-3 justify-between items-center border-y border-gray-600 p-8
+      ">
+        <a target="_blank" href="mailto:melvinssimon@gmail.com" class="cursor-pointer gap-2 flex justify-center items-center  hover:bg-gradient-to-r from-orange-500 to-orange-900 hover:text-transparent hover:bg-clip-text ease-in duration-200">
+        
+          <i class="fa-solid fa-envelope"></i>
+          <h3>melvinssimon@gmail.com</h3>          
+        </a>
+        <a target="_blank" href="https://wa.me/254714447197?text=Hi! XENIEX is here." class="cursor-pointer gap-2 flex justify-center items-center  hover:bg-gradient-to-r from-orange-500 to-orange-900 hover:text-transparent hover:bg-clip-text ease-in duration-200">
+          <i class="fa-brands fa-rocketchat text-lg"></i>
+          <h3>+25414447197</h3>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/melvins-simon-123257293/" class="cursor-pointer gap-2 flex justify-center items-center hover:bg-gradient-to-r from-orange-500 to-orange-900 hover:text-transparent hover:bg-clip-text ease-in duration-200">
+         <i class="fa-brands fa-linkedin text-lg"></i>
+          <h3>LinkedIn</h3>
+            
+        </a>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+  <!-- Link To React Js -->
+  <script src="/src/main.js"></script>
+  <script src="/src/autotext.js"></script>
+</body>
+</html>
